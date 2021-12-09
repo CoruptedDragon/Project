@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Form Booking </title>
+</head>
+<body>
+	<h1> Hotel Booking* </h1>
+	<h3> If you need any help, contact us from our website! </h3>
+	<img src="Flag.jpg" alt="flag" style="text-align:right;">
+<form>
+	<label>Full name*:</label><br>
+  <input type="text" name="full_name" placeholder="FirstName LastName" autofocus="autofocus" value=""><br>
+  <label>Email address*:</label><br>
+  <input type="text" name="email_addr" value=""><br>
+  <label>Telephone (Must Give) *:</label><br>
+<input type="tel"><br>
+<label>Arrival date*:</label><br>
+  <input type="text" name="arv_dt" placeholder="m/d/y" value=""><br>
+        <label>Number of people*:</label><br>
+  <input type="text" name="persons" value=""s><br>
+
+<label for="Types">Room Types :</label>
+<select name="Types" id="types">
+ <optgroup label="Single Room">
+ <option value="Luxury">Luxury (Single)</option>
+ <option value="normal"> Normal (Single) </option>
+ </optgroup>
+ <optgroup label="Double Room">
+ <option value="Luxury"> Luxury (Double) </option>
+ <option value="normal">Normal (Double) </option>
+ </optgroup>
+ <optgroup label="Twin Room">
+ <option value="Luxury"> Luxury (Twin)</option>
+ <option value="normal">Normal (Twin) </option>
+ </optgroup>
+ <optgroup label="Family Room">
+ <option value="Luxury"> Luxury (Family)</option>
+ <option value="normal">Normal (Family) </option>
+ </optgroup>
+</select>
+<br>  <textarea name="message" rows="10" cols="30">
+ Other Requests..
+</textarea><br>
+<label>Terms and conditions*</label><br>
+  <input type="radio" name="tnc" value="agree" checked>I agree
+  <input type="radio" name="tnc" value="disagree" >I disagree<br>
+<button type="button" onclick="alert('Thanks for Booking! We will inform you as soon as possible!')"> Submit form </button>
+
+</body>
+</html>
